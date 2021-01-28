@@ -657,7 +657,7 @@ where
 
 /// The coordinate that for duration of time
 #[derive(Clone)]
-pub struct RangedDuration(Duration, Duration);
+pub struct RangedDuration(pub Duration, pub Duration);
 
 impl AsRangedCoord for Range<Duration> {
     type CoordDescType = RangedDuration;
